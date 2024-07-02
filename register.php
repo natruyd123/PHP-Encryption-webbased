@@ -9,6 +9,7 @@ session_start(); // Start a PHP session
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register Page</title>
+    <link rel="icon" href="./assets/img/encrypted-logo.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <style>
@@ -66,7 +67,7 @@ session_start(); // Start a PHP session
                     <?php
                         if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             // Connect to the database (replace with your database connection code)
-                            $mysqli = require __DIR__ . "/db.php";
+                            $mysqli = require __DIR__ . "/config/db.php";
 
                             $username = $mysqli->real_escape_string($_POST["registerUname"]);
                             $password = $_POST["registerPassword"];

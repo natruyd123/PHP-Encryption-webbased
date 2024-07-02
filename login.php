@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login Page</title>
+    <link rel="icon" href="./assets/img/encrypted-logo.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
         section{
@@ -76,7 +77,7 @@
 
                                 if($_SERVER["REQUEST_METHOD"] === "POST"){
 
-                                    $mysqli = require __DIR__ . "/db.php";
+                                    $mysqli = require __DIR__ . "/config/db.php";
 
                                     $sql = sprintf("SELECT * FROM user_registered
                                                     WHERE username = '%s'",
@@ -114,7 +115,7 @@
                     <?php
                         if ($_SERVER["REQUEST_METHOD"] === "POST") {
                             // Connect to the database (replace with your database connection code)
-                            $mysqli = require __DIR__ . "/db.php";
+                            $mysqli = require __DIR__ . "/config/db.php";
 
                             $username = $mysqli->real_escape_string($_POST["usernameInput"]);
                             $password = $_POST["passwordInput"];

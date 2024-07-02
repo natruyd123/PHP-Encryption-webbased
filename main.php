@@ -12,7 +12,7 @@ if (!isset($_SESSION["logged_in"])) {
 
      if(isset($_SESSION["user_id"])){
         
-        $mysqli = require __DIR__ . "/db.php";
+        $mysqli = require __DIR__ . "/config/db.php";
         
         $sql = "SELECT * FROM `user_registered` 
                 WHERE id = {$_SESSION["user_id"]}";
@@ -31,7 +31,7 @@ if (!isset($_SESSION["logged_in"])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LuweSypher Main Page</title>
-    <link rel="icon" sizes="32x32" href="./img/encrypted-logo.png" type="image/png">
+    <link rel="icon" href="./assets/img/encrypted-logo.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
         section{

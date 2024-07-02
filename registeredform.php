@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Registered Page</title>
+    <link rel="icon" href="./assets/img/encrypted-logo.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
         section{
@@ -31,12 +32,6 @@
                 <ul class="navbar-nav justify-content-center align-items-center ">
                     <li class="nav-item ">
                         <a class="nav-link btn btn-secondary" href="./Index.php">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link btn btn-secondary" href="./login.php">Login</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link btn btn-secondary" href="./register.php">Register</a>
                     </li>
                 </ul>
             </div>
@@ -69,6 +64,9 @@
                                 <p><strong>Course: </strong>BSIT 3C</p>
                                 <p><strong>Your Website/Platform Name:</strong> LuweSypher Encryption | Decryption</p>
                                 <p><strong>Contact Information:</strong><a class="text-decoration-none text-success" href="https://www.facebook.com/luwesyfer"> https://www.facebook.com/luwesyfer</a> </p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-success px-5" href="./login.php">Login</a>
                             </div>
                         </form>
                         </div>
